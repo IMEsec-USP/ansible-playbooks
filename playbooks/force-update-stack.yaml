@@ -1,6 +1,6 @@
 ---
 - hosts: swarm_managers
-  remote_user: razgrizone
+  remote_user: <user>
   become: yes
   tasks:
     - name: Force update docker stack
