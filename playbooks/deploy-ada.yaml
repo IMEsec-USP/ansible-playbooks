@@ -1,0 +1,10 @@
+---
+- hosts: imesec
+  become: yes
+  tasks:
+    - name: Stop ada
+      shell: docker stop ada
+    - name: Pull image 
+      shell: docker pull razgrizone/ada
+    - name: Start ada 
+      shell: /services/ada/start-ada.sh
