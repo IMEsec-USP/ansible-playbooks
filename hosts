@@ -2,16 +2,12 @@ all:
   hosts:
     torradeira:
       proxy: imesec.ime.usp.br
-      ansible_ssh_user: <user>
     gaia:
       proxy: imesec.ime.usp.br
-      ansible_ssh_user: <user>
     imesec:
       host: imesec.ime.usp.br
-      ansible_ssh_user: <user>
   children:
     swarm_managers:
       hosts:
         torradeira:
           proxy: imesec.ime.usp.br
-          ansible_ssh_user: <user>
